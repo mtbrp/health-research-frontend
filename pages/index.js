@@ -28,16 +28,6 @@ export default function Home() {
   const { theme, setTheme } = useTheme();
   const chatRef = useRef(null);
 
-  // FORCE TAILWIND LOAD (Fix for your previous unstyled screenshot)
-  useEffect(() => {
-    if (!document.getElementById('tailwind-cdn')) {
-      const script = document.createElement("script");
-      script.id = 'tailwind-cdn';
-      script.src = "https://cdn.tailwindcss.com";
-      document.head.appendChild(script);
-    }
-  }, []);
-
   // Load folders from backend
   useEffect(() => {
     if (!backend) return;
