@@ -1,9 +1,9 @@
-import './globals.css' // Notice we removed one dot and the "styles/" folder
+import './globals.css'
 import { ThemeProvider } from 'next-themes'
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
+    <ThemeProvider attribute="class">
       <Component {...pageProps} />
     </ThemeProvider>
   )
