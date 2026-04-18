@@ -12,6 +12,12 @@
     "react-dom": "latest",
     "axios": "latest",
     "file-saver": "^2.0.5",
-    "next-themes": "^0.2.1"
+    "next-themes": "^0.2.1",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
   }
 }
